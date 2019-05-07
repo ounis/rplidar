@@ -6,7 +6,7 @@ import sys
 from rplidar import RPLidar
 
 
-PORT_NAME = '/dev/ttyUSB0'
+PORT_NAME = '/dev/tty.SLAB_USBtoUART'
 
 
 def run(path):

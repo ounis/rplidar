@@ -30,7 +30,7 @@ View the latest rplidar documentation at http://rplidar.rtfd.org/.
 Simple example:
 ```Python
 from rplidar import RPLidar
-lidar = RPLidar('/dev/ttyUSB0')
+lidar = RPLidar('/dev/tty.SLAB_USBtoUART')
 
 info = lidar.get_info()
 print(info)

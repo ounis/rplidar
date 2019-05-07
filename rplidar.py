@@ -3,7 +3,7 @@
 Usage example:
 
 >>> from rplidar import RPLidar
->>> lidar = RPLidar('/dev/ttyUSB0')
+>>> lidar = RPLidar('/dev/tty.SLAB_USBtoUART')
 >>> 
 >>> info = lidar.get_info()
 >>> print(info)
@@ -88,7 +88,7 @@ class RPLidar(object):
     '''Class for communicating with RPLidar rangefinder scanners'''
 
     _serial_port = None  #: serial port connection
-    port = ''  #: Serial port name, e.g. /dev/ttyUSB0
+    port = ''  #: Serial port name, e.g. /dev/tty.SLAB_USBtoUART
     timeout = 1  #: Serial port timeout
     motor = False  #: Is motor running?
     baudrate = 115200  #: Baudrate for serial port
